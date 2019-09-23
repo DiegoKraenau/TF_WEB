@@ -12159,11 +12159,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\diego\\Desktop\\TRABAJO_FINAL_WEB\\RapiSolverWeb\\RapiSolverWeb.csproj",
+      "projectUniqueName": "C:\\Users\\diego\\Desktop\\TF_WEB\\RapiSolverWeb\\RapiSolverWeb.csproj",
       "projectName": "RapiSolverWeb",
-      "projectPath": "c:\\Users\\diego\\Desktop\\TRABAJO_FINAL_WEB\\RapiSolverWeb\\RapiSolverWeb.csproj",
+      "projectPath": "C:\\Users\\diego\\Desktop\\TF_WEB\\RapiSolverWeb\\RapiSolverWeb.csproj",
       "packagesPath": "C:\\Users\\diego\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\diego\\Desktop\\TRABAJO_FINAL_WEB\\RapiSolverWeb\\obj\\",
+      "outputPath": "C:\\Users\\diego\\Desktop\\TF_WEB\\RapiSolverWeb\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

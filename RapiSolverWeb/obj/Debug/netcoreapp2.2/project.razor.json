@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\diego\\Desktop\\TRABAJO_FINAL_WEB\\RapiSolverWeb\\RapiSolverWeb.csproj",
+  "FilePath": "c:\\Users\\diego\\Desktop\\TF_WEB\\RapiSolverWeb\\RapiSolverWeb.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-2.1",
     "LanguageVersion": "2.1",
@@ -2993,6 +2993,11 @@
     {
       "FilePath": "Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Person\\Index.cshtml",
+      "TargetPath": "Views\\Person\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
