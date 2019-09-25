@@ -1,10 +1,12 @@
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace RapiSolverWeb.Models
 {
-    [Table("Location")]
-    class Location{
+    [Table("location")]
+
+     public class Location{
 
         [Key]
         public int Idlocation{get;set;}
@@ -30,12 +32,18 @@ namespace RapiSolverWeb.Models
         [Required(ErrorMessage = "El nombre debe tener minimo 3 caracteres")]
         public string Address{get;set;}
 
+        public virtual List<Supplier> Suppliers { get; set; }
 
+       
 
     }
 
-
-
 }
 
+
+
 //Un comenteario para probar git
+
+/*
+
+ */

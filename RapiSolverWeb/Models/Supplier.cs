@@ -1,13 +1,17 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
+
 namespace RapiSolverWeb.Models
 {
-    [Table("Persons")]
-    public class Person
+    [Table("supplier")]
+    public class Supplier
     {
+
+       
+
         [Key]
-        public int IdPerson{get;set;}
+        public int IdSupplier{get;set;}
 
         [Column("name")]
         [StringLength(50, MinimumLength = 5)]
@@ -41,7 +45,12 @@ namespace RapiSolverWeb.Models
 
         [Column("gender")]
         public string Gender{get;set;}
-        
-        //FALTA LOCATION
+
+        [Column("nameCompany")]
+        public string NameCompany{get;set;}
+
+        public Location location{get;set;}
+
+      
     }
 }

@@ -3,15 +3,17 @@ using System;
 using Hospital.Repositoy.dbcontext;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace RapiSolverWeb.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20190925172208_Init7")]
+    partial class Init7
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -66,15 +68,11 @@ namespace RapiSolverWeb.Migrations
                     b.Property<int>("IdDetalleServiceSupplier")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<int?>("ServicioDetailIdServicio");
-
-                    b.Property<int?>("SupplierDetailIdSupplier");
+                    b.Property<int?>("ServicioIdServicio");
 
                     b.HasKey("IdDetalleServiceSupplier");
 
-                    b.HasIndex("ServicioDetailIdServicio");
-
-                    b.HasIndex("SupplierDetailIdSupplier");
+                    b.HasIndex("ServicioIdServicio");
 
                     b.ToTable("detailServiceSupplier");
                 });
@@ -199,13 +197,9 @@ namespace RapiSolverWeb.Migrations
 
             modelBuilder.Entity("RapiSolverWeb.Models.DetalleServiceSupplier", b =>
                 {
-                    b.HasOne("RapiSolverWeb.Models.Servicio", "ServicioDetail")
+                    b.HasOne("RapiSolverWeb.Models.Servicio")
                         .WithMany("lista")
-                        .HasForeignKey("ServicioDetailIdServicio");
-
-                    b.HasOne("RapiSolverWeb.Models.Supplier", "SupplierDetail")
-                        .WithMany()
-                        .HasForeignKey("SupplierDetailIdSupplier");
+                        .HasForeignKey("ServicioIdServicio");
                 });
 
             modelBuilder.Entity("RapiSolverWeb.Models.Servicio", b =>
