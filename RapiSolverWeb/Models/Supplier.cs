@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -49,8 +50,9 @@ namespace RapiSolverWeb.Models
         [Column("nameCompany")]
         public string NameCompany{get;set;}
 
+        
         public Location location{get;set;}
 
-      
+        public virtual IEnumerable<DetalleServiceSupplier> DetalleServicio{get;set;}
     }
 }

@@ -23,9 +23,11 @@ namespace RapiSolverWeb.Models
         [Column("cost")]
         public string Cost{get;set;}
 
+
+        public int CategoryId{get;set;}
         public ServiceCategory Category{get;set;}
 
-        public virtual List<DetalleServiceSupplier> lista{get;set;}
+        public virtual IEnumerable<DetalleServiceSupplier> DetalleSupplier{get;set;}
 
 
         

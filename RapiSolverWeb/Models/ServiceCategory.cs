@@ -8,7 +8,7 @@ namespace RapiSolverWeb.Models
     public class ServiceCategory
     {
         [Key]
-        public int IdServicio{get;set;}
+        public int IdCategory{get;set;}
 
         [Column("name")]
         [StringLength(50, MinimumLength = 5)]

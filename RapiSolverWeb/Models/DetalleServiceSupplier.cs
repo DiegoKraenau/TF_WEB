@@ -10,8 +10,10 @@ namespace RapiSolverWeb.Models
         [Key]
         public int IdDetalleServiceSupplier{get;set;}
 
+      //  public int ServiceId{get;set;}
         public Servicio ServicioDetail{get;set;}
 
+     //   public int SupplierId{get;set;}
         public Supplier SupplierDetail{get;set;}
     }
 }
