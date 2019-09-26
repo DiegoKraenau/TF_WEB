@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -28,6 +29,7 @@ namespace RapiSolverWeb.Models
         public ServiceCategory Category{get;set;}
 
         public virtual IEnumerable<DetalleServiceSupplier> DetalleSupplier{get;set;}
+
 
 
         

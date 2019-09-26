@@ -15,5 +15,9 @@ namespace RapiSolverWeb.Models
 
      //   public int SupplierId{get;set;}
         public Supplier SupplierDetail{get;set;}
+
+        
+
+
     }
 }

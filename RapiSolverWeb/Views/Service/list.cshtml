@@ -1,0 +1,45 @@
+@{
+    ViewData["Title"] = "Buscar Servicio";
+}
+
+<form action="/Service/detalle" method="post">
+                <input type="type" name="email" value="" />
+                <button>Enviar</button>
+    </form>
+
+   
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>ID</td>
+            <th>Nombre</td>
+            <th>Costo</td>
+            <th>Detalle</td>
+            <th colspan="2"></th>
+        </tr>
+    </thead>
+    <tbody>
+
+
+        @foreach(Servicio Servicio  in ViewBag.Servicios)
+        {
+            <tr>
+            <td id="codigo" name="edad"> @Servicio.IdServicio</td>
+            <td> @Servicio.Name</td>
+            <td> @Servicio.Cost</td>
+            <td><a action="/Service/detalle" class="btn btn-success">Detalle</a></td>
+
+
+            
+               
+           
+            
+            </tr>
+            
+            
+        }
+
+        
+    </tbody>
+</table>

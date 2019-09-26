@@ -58,4 +58,5 @@ C:\Users\diego\Desktop\TF_WEB\RapiSolverWeb\obj\Debug\netcoreapp2.2\RapiSolverWe
 C:\Users\diego\Desktop\TF_WEB\RapiSolverWeb\obj\Debug\netcoreapp2.2\RapiSolverWeb.dll
 C:\Users\diego\Desktop\TF_WEB\RapiSolverWeb\obj\Debug\netcoreapp2.2\RapiSolverWeb.pdb
 C:\Users\diego\Desktop\TF_WEB\RapiSolverWeb\obj\Debug\netcoreapp2.2\RapiSolverWeb.csproj.CopyComplete
-C:\Users\diego\Desktop\TF_WEB\RapiSolverWeb\obj\Debug\netcoreapp2.2\Razor\Views\Person\Index.g.cshtml.cs
+C:\Users\diego\Desktop\TF_WEB\RapiSolverWeb\obj\Debug\netcoreapp2.2\Razor\Views\Service\list.g.cshtml.cs
+C:\Users\diego\Desktop\TF_WEB\RapiSolverWeb\obj\Debug\netcoreapp2.2\Razor\Views\Service\detalle.g.cshtml.cs
