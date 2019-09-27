@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -42,6 +43,8 @@ namespace RapiSolverWeb.Models
 
         [Column("gender")]
         public string Gender{get;set;}
+
+        public virtual IEnumerable<Reservation> Reservations{get;set;}
         
     }
 }

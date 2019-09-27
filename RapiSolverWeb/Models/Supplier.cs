@@ -54,5 +54,7 @@ namespace RapiSolverWeb.Models
         public Location location{get;set;}
 
         public virtual IEnumerable<DetalleServiceSupplier> DetalleServicio{get;set;}
+
+        public virtual IEnumerable<Reservation> Reservations{get;set;}
     }
 }

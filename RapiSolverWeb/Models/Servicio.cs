@@ -31,7 +31,7 @@ namespace RapiSolverWeb.Models
         public virtual IEnumerable<DetalleServiceSupplier> DetalleSupplier{get;set;}
 
 
-
+        public virtual IEnumerable<Reservation> Reservations{get;set;}
         
     }
 }

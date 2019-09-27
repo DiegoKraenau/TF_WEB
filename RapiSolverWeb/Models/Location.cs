@@ -35,7 +35,7 @@ namespace RapiSolverWeb.Models
         public virtual List<Supplier> Suppliers { get; set; }
 
        
-
+        public virtual IEnumerable<Reservation> Reservations{get;set;}
     }
 
 }

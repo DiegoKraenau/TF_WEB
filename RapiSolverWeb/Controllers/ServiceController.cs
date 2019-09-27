@@ -31,5 +31,12 @@ namespace RapiSolverWeb.Controllers
            // ViewBag.Codigo=email;
             return View();
         }
+
+        [HttpGet]
+        public IActionResult agregar()
+        {
+           // ViewBag.Codigo=email;
+            return View();
+        }
     }
 }

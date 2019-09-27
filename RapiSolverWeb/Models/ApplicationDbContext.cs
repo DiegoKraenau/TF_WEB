@@ -11,6 +11,8 @@ namespace Hospital.Repositoy.dbcontext {
         public DbSet<ServiceCategory> serviceCategory { get; set; }
         public DbSet<Supplier> supplier { get; set; }
 
+        public DbSet<Reservation> reservation { get; set; }
+
 
         public ApplicationDbContext (DbContextOptions<ApplicationDbContext> options) : base (options) {
 
@@ -23,6 +25,11 @@ namespace Hospital.Repositoy.dbcontext {
            
            modelBuilder.Entity<DetalleServiceSupplier>().HasOne(x=>x.SupplierDetail);
            modelBuilder.Entity<DetalleServiceSupplier>().HasOne(x=>x.ServicioDetail);
+
+           modelBuilder.Entity<Reservation>().HasOne(x=>x.Location);
+           modelBuilder.Entity<Reservation>().HasOne(x=>x.Supplier);
+           modelBuilder.Entity<Reservation>().HasOne(x=>x.Customer);
+           modelBuilder.Entity<Reservation>().HasOne(x=>x.Servicio);
         }
     }
 }
