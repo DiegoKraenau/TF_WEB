@@ -25,10 +25,10 @@ namespace RapiSolverWeb.Controllers
         }
 
         
-        [HttpPost]
-        public IActionResult detalle(string email)
+        [HttpGet]
+        public IActionResult detalle()
         {
-            ViewBag.Codigo=email;
+           // ViewBag.Codigo=email;
             return View();
         }
     }

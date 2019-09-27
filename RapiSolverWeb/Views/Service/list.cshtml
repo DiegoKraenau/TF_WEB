@@ -1,6 +1,37 @@
 @{
     ViewData["Title"] = "Buscar Servicio";
 }
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - RapiSolverWeb</title>
+<title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+ <header>
+        <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand"asp-area="" asp-controller="Home" asp-action="Index">RapiSolver</a>
+    </div>
+    <ul class="nav navbar-nav">
+      
+      <li><a href="#">Iniciar Sesion</a></li>
+      <li><a class="nav-link text-dark" asp-area="" asp-controller="Service" asp-action="list" >Buscar Servicio</a></li>
+      <li><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Crear Servicio</a></li>
+      <li><a href="#">Buscar Persona</a></li>
+      
+    </ul>
+  </div>
+</nav>
+    </header>
 
 <form action="/Service/detalle" method="post">
                 <input type="type" name="email" value="" />
@@ -28,7 +59,7 @@
             <td id="codigo" name="edad"> @Servicio.IdServicio</td>
             <td> @Servicio.Name</td>
             <td> @Servicio.Cost</td>
-            <td><a action="/Service/detalle" class="btn btn-success">Detalle</a></td>
+            <td><a  asp-action="detalle" asp-controller="Service" class="btn btn-success">Detalle</a></td>
 
 
             
@@ -43,3 +74,8 @@
         
     </tbody>
 </table>
+
+</body>
+
+</html>
+ 
